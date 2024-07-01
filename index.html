@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADE GENERATOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade Generator</h1>
+        <form id="gradeForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required>
+            
+            <label for="rollNumber">Roll Number:</label>
+            <input type="number" id="rollNumber" required>
+            
+            <label for="section">Section:</label>
+            <div>
+                <input type="radio" id="sectionA" name="section" value="A" required>
+                <label for="sectionA">A</label>
+                <input type="radio" id="sectionB" name="section" value="B">
+                <label for="sectionB">B</label>
+                <input type="radio" id="sectionC" name="section" value="C">
+                <label for="sectionC">C</label>
+                <input type="radio" id="sectionD" name="section" value="D">
+                <label for="sectionD">D</label>
+            </div>
+
+            <label for="subject1">Tamil:</label>
+            <input type="number" id="subject1" min="0" max="100" required>
+            <label for="subject2">English:</label>
+            <input for="number" id="subject2" min="0" max="100"  required>
+            <label for="subject3">Maths:</label>
+            <input for="number" id="subject3" min="0" max="100"  required>
+            <label for="subject4">Science:</label>
+            <input for="number" id="subject4" min="0" max="100"  required>
+            <label for="subject5">Social:</label>
+            <input for="number" id="subject5" min="0" max="100" required>
+            <button type="submit">SUBMIT</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+
+
+
+    </div>
+
+</body>
+</html>
